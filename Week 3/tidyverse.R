@@ -1,152 +1,170 @@
-# Menggunakan Tidyverse
+# Introduction to Tidyverse
 
-# load the dplyr and tidyr packages
-library(dplyr) ; library(tidyr)
+# first, install reprores package
+devtools::install_github("psyteachr/reprores-v2")
+# install.packages("devtools")
 
+# install devtools if you dont have
+#install tidyverse if you haven't installed the package
+# load these library
+library(dplyr)
+library(tidyr)
+library(reprores)
+
+
+# there are set of data in reprores package
+# check it out lists datasets in reprores
+data(package = "reprores")
+
+# look at a dataset
+smalldata
+
+# loads smalldata into the environment
+data("smalldata")
+
+# You can get a quick summary of a dataset with the summary() function.
+summary(smalldata)
+
+# You can even do things like calculate the difference between the means of two columns.
+pre_mean <- mean(smalldata$pre)
+post_mean <- mean(smalldata$post)
+post_mean - pre_mean
+################################################################################
+# Be able to use the 6 main dplyr one-table verbs: select(), filter(), arrange(), 
+# mutate(), summarise(), group_by()
+
+### select()
+# kita pake data disgust
+data("disgust", package = "reprores")
+
+# Select columns by name or number.
+# You can select each column individually, separated by commas (e.g., col1, col2). You can also select all columns between two columns by separating them with a colon (e.g., start_col:end_col).
+moral <- disgust %>% 
+  select(user_id, moral1:moral7)
+
+# You can select columns by number, which is useful when the column names are long or complicated.
+sexual <- disgust %>% 
+  select(2, 11:17)
+
+# You can use a minus symbol to unselect columns
+pathogen <- disgust %>% 
+  select(-id, -date, -(moral1:sexual7))
+
+# Select columns that start with a character string = start_with.
+u <- disgust %>% 
+  select(starts_with("u"))
+
+# Select columns that end with a character string = ends_with.
+firstq <- disgust %>% 
+  select(ends_with("1"))
 
 ################################################################################
-# TIDY DATA AND TIDYVERSE FEATURES
-data(mtcars)
+### Filter()
+# Select rows by matching column criteria.
+# Select all rows where the user_id is 1
+user_1 <- disgust %>% 
+  filter(user_id == 1)
 
-# ordering a dataset with standard R tools
-mtcars[order(mtcars$mpg),]
-
-# ordering a dataset with tidyverse functions
-arrange(mtcars, mpg)
-
-# tidyverse: common data structure, pipes, non-standard evaluation
-
-################################################################################
-# MANAGING VARIABLES
-
-# load the package Epi and births (uncomment if needs installing)
-#install.packages("Epi")
-library(Epi)
-data(births)
-
-# the function mutate()
-mutate(births, preterm = factor(preterm, labels=c("no","yes"))) |> head(3)
-
-# creating and transforming multiple variables
-births <- mutate(births,
-                 preterm = factor(preterm, labels=c("no","yes")),
-                 hyp = factor(hyp, labels=c("no","yes")),
-                 sex = factor(sex, labels=c("male","female")),
-                 matagegr = cut(matage, breaks=c(0,30,35,100), right=F)
+# You can select on multiple criteria by separating them with commas.
+amoral <- disgust %>% filter(
+  moral1 == 0, 
+  moral2 == 0,
+  moral3 == 0, 
+  moral4 == 0,
+  moral5 == 0,
+  moral6 == 0,
+  moral7 == 0
 )
-head(births, 3)
 
-# more specialised usages, for example using across() 
+# You can use the symbols &, |, and ! to mean "and", "or", and "not". You can also use other operators to make equations.
+# everyone who chose either 0 or 7 for question moral1
+moral_extremes <- disgust %>% 
+  filter(moral1 == 0 | moral1 == 7)
 
-################################################################################
-# LABELLING, SUBSETTING, AND REORDERING DATASETS
+# everyone who chose the same answer for all moral questions
+moral_consistent <- disgust %>% 
+  filter(
+    moral2 == moral1 & 
+      moral3 == moral1 & 
+      moral4 == moral1 &
+      moral5 == moral1 &
+      moral6 == moral1 &
+      moral7 == moral1
+  ) # biasanya dipake buat eliminate outliers yang gak niat ngisi data
 
-# have a look at esoph
-data(esoph)
-esoph
-head(esoph, 3)
 
-# labelling
-esoph <- rename(esoph, age=agegp, alcohol=alcgp, tobacco=tobgp, cases=ncases, 
-                controls=ncontrols)
-head(esoph, 3)
+#You can use - install.packages("lubridate") - package to work with dates. For example, you can use the year() function to return just the year from the date column and then select only data collected in 2010.
+install.packages("lubridate")
+library(lubridate)
 
-# subsetting
-esoph |> filter(age=="55-64", tobacco %in% c("10-19","20-29")) |>
-  select(alcohol, tobacco, cases, controls)
-
-# use of specific operators and functions 
-select(esoph, alcohol:controls) |> head(3)
-select(esoph, !alcohol:controls) |> head(3)
-select(esoph, -age) |> head(3)
-select(esoph, starts_with("a")) |> head(3)
-select(esoph, contains("l")) |> head(3)
-
-# note the usual syntax with a call to the data followed by piped operations
-# also note the use of unquoted names referring to variables
-
-# other functions useful to subset or extract, useful in piped operations
-slice(esoph, 4:5)
-pull(esoph, tobacco) |> head()
-
-# other examples
-slice_max(esoph, cases, n=3) # the records with the largest values of a var 
-pull(esoph, 2) # second
-pull(esoph, -2) # second from last
-
-# however, even with standard indexing and extraction operators
-esoph |> _[3:5,]
-esoph |> _$tobacco
-
-# reordering rows and columns
-esoph <- arrange(esoph, tobacco, alcohol, age) |> select(c(3:1,4:5))
-esoph
-
-# descending order
-arrange(esoph, tobacco) |> head()
-arrange(esoph, desc(tobacco)) |> head()
-
-# all in one step 
-rm(esoph)
-data(esoph)
-esoph |>
-  rename(age=agegp, alcohol=alcgp, tobacco=tobgp, cases=ncases, 
-         controls=ncontrols) |>
-  filter(age=="55-64" & tobacco %in% c("10-19","20-29")) |>
-  select(alcohol, tobacco, cases, controls) |>
-  arrange(tobacco, alcohol)
+disgust2010 <- disgust %>% filter(year(date) == 2010)
 
 ################################################################################
-# APPENDING, MERGING, AND RESHAPING DATASETS
+### mutate()
+disgust_total <- disgust %>% 
+  mutate(moral_total = moral1 + moral2 + moral3 + moral4 + moral5 + moral6 + moral7,
+         sexual_total = sexual1 + sexual2 + sexual3 + sexual4 + sexual5 + sexual6 + sexual7,
+         pathogen_total = pathogen1 + pathogen2 + pathogen3 + pathogen4 + pathogen5 + pathogen6 + pathogen7,
+         total = moral_total + sexual_total + pathogen_total
+         )
 
-# have a look at mtcars
-head(mtcars, 3)
+### summarise() = aggregating dataset
+# mean(), n(), min(), max(), sd()
 
-# an example of appending with rbind()
-bind_rows(mtcars[1:2,], mtcars[1:2,])
+disgust_summary<- disgust_total %>%
+  summarise(
+    n = n(),
+    avg_total = mean(total, na.rm = TRUE),
+    sd_total  = sd(total, na.rm = TRUE),
+    min_total = min(total, na.rm = TRUE),
+    max_total = max(total, na.rm = TRUE)
+  )
 
-# create a score for forward gears related to mtcars
-gearscore <- data.frame(gear=3:6, score=c(2.1, 7.5, 8.1, 8.3))
+moral_summary <- disgust_total %>% 
+  summarise(
+    mean_moral = mean(moral_total, na.rm = TRUE),
+    sd_moral = sd(moral_total, na.rm = TRUE),
+    min_moral = min(moral_total, na.rm = TRUE),
+    max_moral = max(moral_total, na.rm = TRUE)
+  )
 
-# merging
-inner_join(mtcars, gearscore, by="gear")
-full_join(mtcars, gearscore, by="gear")
+# group_by()
+data("pets")
 
-
-# alternatively, left_join(), right_join(), and full_join()
-
-data(sleep)
-sleep
-# let's have a look to sleep
-head(sleep, 3)
-
-# reshaping from long to wide
-sleepwide <- pivot_wider(sleep, id_cols=ID, values_from=extra, names_from=group,
-                         names_prefix="extra")
-head(sleepwide, 3)
+pet_avg <- pets %>% 
+  group_by(pet) %>% 
+  summarise(avg_weight = mean(weight),
+            avg_age = mean(age)
+            )
 
 
-# reshaping from wide to long
-pivot_longer(sleepwide, cols=2:3, values_to="extra", names_to="group") |>
-  head(3)
+################### TUGAS
+# load dataset "pets" dari package "reprores"
+# pilihlah data yang hanya mencakup hewan peliharaan (pet) "dog" saja 
+# pilihlah kolomn ID, pet, dan score saja
+# carilah rata-rata score dari masing2 jenis pet dan country
+
+
+### arrange()
+# arrange is used to reorder rows of a data frame based on one or more variables. 
+# It sorts the rows in ascending or descending order of the specified variable(s).
+disgust_order <- disgust |>
+  arrange(date, moral1)
 
 
 ################################################################################
-# AGGREGATING DATASETS
+### inner_join(), full_join()
 
-# a simple aggregation
-summarise(mtcars, avgmpg=mean(mpg), medhp=median(hp)) 
-aggregate(mpg~vs,mtcars, FUN=median)
+################################################################################
+### pivot_longer(), pivot_wider()
 
-# aggregating by groups using the argument .by
-summarise(mtcars, avgmpg=mean(mpg), medhp=median(hp), .by=c(vs,am)) 
+################################################################################
 
-# aggregating by groups
-mtcars |> group_by(vs, am) |> summarise(avgmpg=mean(mpg), medhp=median(hp)) 
 
-# aggregating with multiple values
-mtcars |> 
-  group_by(vs) |> 
-  reframe(probs=paste0(1:3*25, "%"), mpg=quantile(mpg, 1:3*25/100))
+
+
+
+
+
 
 

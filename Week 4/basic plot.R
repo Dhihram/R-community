@@ -43,6 +43,12 @@ ggplot(myFrame, aes(x=Freq, y=Var1)) + geom_bar(stat="identity", position="dodge
 ggplot(myFrame, aes(x=Freq, y=Var1)) + geom_bar(stat="identity", position="dodge", color = 'black', fill = 'gray') +
 theme_minimal() + labs(x="Frequency",y="Low birth weight", title="Frekuensi low birth weight", caption = "Sumber data: Mirza Iqbal 1984")
 
+##pallette
+#install.packages('wesanderson')
+library(wesanderson)
+
+ggplot(myFrame, aes(x=Freq, y=Var1, fill = Var1)) + geom_bar(stat="identity", position="dodge") + scale_fill_manual(values = wes_palette("GrandBudapest1", n = 2)) + theme_minimal()
+
 
 #scatterplot
 
@@ -60,6 +66,10 @@ ggplot(births, aes(x=gestwks, y=bweight)) + geom_point()
 ggplot(births, aes(x=gestwks, y=bweight)) + geom_point(pch=16, col="red", cex=2) 
 ggplot(births, aes(x=gestwks, y=bweight)) + geom_point(pch=16, col="red", cex=2)  + labs(x="Gestational week",y="Birth weight (gr)", title="Hubungan antara gestational week dan birth weight", caption = "Sumber data: Mirza Iqbal 1984")
 ggplot(births, aes(x=gestwks, y=bweight)) + geom_point(pch=16, col="red", cex=2)  + labs(x="Gestational week",y="Birth weight (gr)", title="Hubungan antara gestational week dan birth weight", caption = "Sumber data: Mirza Iqbal 1984") + theme_minimal()
+
+##pallette
+
+ggplot(births, aes(x=gestwks, y=bweight, col=as.factor(hyp))) + geom_point(pch=16, cex=2) + scale_color_manual(values = wes_palette("Darjeeling2", n = 2)) + labs(x="Gestational week",y="Birth weight (gr)", title="Hubungan antara gestational week dan birth weight", caption = "Sumber data: Mirza Iqbal 1984") + theme_minimal()
 
 #linegraph
 
@@ -87,6 +97,8 @@ boxplot(bweight~lowbw, data=births, col=c("red","blue"), xlab="Low birth weight"
 ggplot(births, aes(x=as.factor(lowbw), y=bweight)) + geom_boxplot(fill=c("red","blue"))
 ggplot(births, aes(x=as.factor(lowbw), y=bweight)) + geom_boxplot(fill=c("red","blue")) + labs(x="Low birth weight",y="Birth weight (gr)", title="A boxplot", caption = "Source: Mirza Iqbal 1984")
 ggplot(births, aes(x=as.factor(lowbw), y=bweight)) + geom_boxplot(fill=c("red","blue")) + labs(x="Low birth weight",y="Birth weight (gr)", title="A boxplot", caption = "Source: Mirza Iqbal 1984") + theme_minimal()
+
+##apakah dapat menggunakan pallete color wes anderson?
 
 
 #pie chart

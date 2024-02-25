@@ -1,4 +1,8 @@
 library(ggplot2)
+#install.packages("Epi")
+library(Epi)
+
+#palette https://sape.inf.usi.ch/sites/default/files/ggplot2-colour-names.png
 
 #histogram
 
@@ -25,8 +29,7 @@ ggplot(births, aes(x=bweight)) + geom_histogram(color="black", fill="white") +  
 
 ##basic code
 
-barplot(table(births$lowbw), horiz=TRUE, las=1, xlab="Frequency", 
-        ylab="Low birth weight", main="A bar plot")
+barplot(table(births$lowbw), horiz=TRUE, las=1, xlab="Frequency", ylab="Low birth weight", main="A bar plot")
 
 ##ggplot
 
@@ -38,7 +41,7 @@ ggplot(myFrame, aes(x=Freq, y=Var1)) + geom_bar(stat="identity", position="dodge
 ggplot(myFrame, aes(x=Freq, y=Var1)) + geom_bar(stat="identity", position="dodge", color = 'black', fill = 'gray')+ labs(x="Frequency",y="Low birth weight", title="Frekuensi low birth weight di Indonesia", caption = "Sumber data: Mirza Iqbal 1984")
 
 ggplot(myFrame, aes(x=Freq, y=Var1)) + geom_bar(stat="identity", position="dodge", color = 'black', fill = 'gray') +
-theme_minimal() + labs(x="Frequency",y="Low birth weight", title="Frekuensi low birth weight di Indonesia", caption = "Sumber data: Mirza Iqbal 1984")
+theme_minimal() + labs(x="Frequency",y="Low birth weight", title="Frekuensi low birth weight", caption = "Sumber data: Mirza Iqbal 1984")
 
 
 #scatterplot
@@ -103,7 +106,57 @@ ggplot(myFrame, aes(x="", y=Freq, fill=Var1)) + geom_bar(width = 1, stat = "iden
   geom_text(aes(label=Freq), position = position_stack(vjust = 0.5), size = 7) + labs(title="A pie chart", x = '', y = '', caption = "Source: Mirza Iqbal 1984") + theme_minimal() +
   theme(axis.text.x = element_blank(), axis.ticks.x = element_blank()) + guides(fill=guide_legend(title="Low birth weight"))
 
-#faceting
+#layouting
 
-ggplot(births, aes(x=gestwks, y=bweight)) + geom_point() + facet_wrap(~lowbw)
-ggplot(births, aes(x=gestwks, y=bweight)) + geom_point() + facet_wrap(~lowbw) + labs(x="Gestational week",y="Birth weight (gr)", title="Hubungan antara gestational week dan birth weight", caption = "Sumber data: Mirza Iqbal 1984")
+##basic plot
+layout(t(1:3))
+hist(births$bweight, breaks=20, col=2, xlab="Birth weight (gr)", main="An histogram")
+barplot(table(births$lowbw), horiz=TRUE, las=1, xlab="Frequency", ylab="Low birth weight", main="A bar plot")
+boxplot(bweight~lowbw, data=births, col=c("red","blue"), xlab="Low birth weight", ylab="Birth weight (gr)", main="A boxplot")
+layout(1)
+
+##ggplot
+#install.packages("patchwork")
+library(patchwork)
+bar <- ggplot(myFrame, aes(x=Freq, y=Var1)) + geom_bar(stat="identity", position="dodge") 
+hist <- ggplot(births, aes(x=bweight)) + geom_histogram() 
+box <- ggplot(births, aes(x=as.factor(lowbw), y=bweight)) + geom_boxplot(fill=c("red","blue"))
+bar+hist+box
+
+#faceting
+#births
+ggplot(births, aes(x=gestwks, y=bweight)) + geom_point() + facet_wrap(~lowbw) + labs(x="Gestational week", y="Birth weight (gr)", title="Hubungan antara gestational week dan birth weight", caption = "Sumber data: Mirza Iqbal 1984") 
+ggplot(births, aes(x=gestwks, y=bweight, col = as.factor(hyp))) + geom_point() + facet_wrap(~lowbw) + labs(x="Gestational week", y="Birth weight (gr)", title="Hubungan antara gestational week dan birth weight", caption = "Sumber data: Mirza Iqbal 1984")
+ggplot(births, aes(x=gestwks, y=bweight)) + geom_point() + facet_grid(hyp~lowbw) + labs(x="Gestational week", y="Birth weight (gr)", title="Hubungan antara gestational week dan birth weight", caption = "Sumber data: Mirza Iqbal 1984")
+ggplot(births, aes(x=gestwks, y=bweight)) + geom_point() + facet_grid(hyp~lowbw) + labs(x="Gestational week", y="Birth weight (gr)", title="Hubungan antara gestational week dan birth weight", caption = "Sumber data: Mirza Iqbal 1984") + theme_bw()
+
+
+#airquality
+ggplot(airquality, aes(x=Day, y=Temp)) + geom_line() + facet_wrap(~Month) + labs(x="Day", y="Temperature", title="Temperature in New York", caption = "Source: New York City Department of Health and Mental Hygiene")
+ggplot(airquality, aes(x=Day, y=Temp)) + geom_line() + facet_wrap(~Month) + labs(x="Day", y="Temperature", title="Temperature in New York", caption = "Source: New York City Department of Health and Mental Hygiene") + theme_minimal()
+
+#OPTIONAL
+#install.packages("table1")
+library(table1)
+
+#table
+##make a data frame
+table <- births %>% mutate(lowbw = case_when(lowbw == 0 ~ "No", lowbw == 1 ~ "Yes"),
+                           hyp = case_when(hyp == 0 ~ "No", hyp == 1 ~ "Yes"),
+                           preterm = case_when(preterm == 0 ~ "No", preterm == 1 ~ "Yes"),
+                           sex = case_when(sex == 1 ~ 'Female', sex == 2 ~ 'Male'))
+
+label(table$bweight)       <- "Birth Weight"
+label(table$lowbw)       <- "Low Birth Weight"
+label(table$gestwks)     <- "Gestation Weeks"
+label(table$hyp)         <- "Hypertension"
+label(table$preterm)     <- "Preterm"
+label(table$sex)         <- 'Sex'
+label(table$matage)      <- 'Maternal Age'
+
+units(table$bweight)       <- "gr"
+units(table$matage)       <- "years"
+
+caption  <- "Table 1. Descrpitive Stats"
+
+table1(~ bweight + gestwks + hyp + preterm + sex + matage| lowbw, data=table, caption = caption)

@@ -2,6 +2,9 @@ library(ggplot2)
 #install.packages("Epi")
 library(Epi)
 
+data(births)
+airquality <- airquality
+
 #palette https://sape.inf.usi.ch/sites/default/files/ggplot2-colour-names.png
 
 #histogram

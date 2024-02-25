@@ -44,6 +44,7 @@ ggplot(myFrame, aes(x=Freq, y=Var1)) + geom_bar(stat="identity", position="dodge
 theme_minimal() + labs(x="Frequency",y="Low birth weight", title="Frekuensi low birth weight", caption = "Sumber data: Mirza Iqbal 1984")
 
 ##pallette
+#dapat cek di https://github.com/karthik/wesanderson
 #install.packages('wesanderson')
 library(wesanderson)
 

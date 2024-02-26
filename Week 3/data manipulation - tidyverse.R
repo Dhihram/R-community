@@ -130,16 +130,22 @@ moral_summary <- disgust_total %>%
 
 # group_by()
 data("pets")
-
 pet_avg <- pets %>% 
   group_by(pet) %>% 
   summarise(avg_weight = mean(weight),
             avg_age = mean(age)
             )
 
-
 ################### TUGAS
 # load dataset "pets" dari package "reprores"
+data("pets")
 # pilihlah data yang hanya mencakup hewan peliharaan (pet) "dog" saja 
-# pilihlah kolomn ID, pet, dan score saja
+dogs_data <- pets %>%
+  filter(pet == "dog")
+# pilihlah kolom ID, pet, dan score saja
+dogs_data <- pets %>%
+  select(id, pet, score)
 # carilah rata-rata score dari masing2 jenis pet dan country
+average_scores <- pets %>%
+  group_by(pet) %>%
+  summarise(average_score = mean(score, na.rm = TRUE))

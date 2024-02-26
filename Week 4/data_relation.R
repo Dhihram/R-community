@@ -4,7 +4,11 @@
 # y = the second (right) table
 # by = what columns to match on. If you leave this blank, it will match on all columns
 
+
 # Create example data frames
+library(tidyr)
+library(dplyr)
+
 subject <- tibble(
   id = 1:5,
   gender = c("m", "m", "f", "nb", "f"),

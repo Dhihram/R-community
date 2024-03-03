@@ -1,5 +1,8 @@
 ### UJI BEDA PROPORSI, UJI BEDA MEAN, UJI HIPOTESIS
 
+library(Epi)
+data(births)
+
 ### UJI BEDA PROPORSI
 
 ###  CHI SQUARE TEST
@@ -83,3 +86,4 @@ cor.test(births$bweight,births$gestwks, method='spearman', exact=F)
 reg <- lm(bweight ~ gestwks, data = births)
 summary(reg)
 ggplot(births, aes(x=gestwks, y=bweight)) + geom_point() + geom_smooth(method = "lm")
+

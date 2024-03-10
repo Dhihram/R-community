@@ -30,7 +30,12 @@ births$matage_kat <- case_when(births$matage < 17 ~ 1,
 
 #2x2 table
 #buatlah 2x2 table untuk variabel lowbw dan preterm
+table(births$lowbw, births$preterm)
+prop.table(table(births$lowbw, births$preterm))
+
 #buat boxplot untuk lowbw dan gestwks
+boxplot(births$gestwks ~ births$lowbw)
+
 
 table <- births %>% mutate(lowbw = case_when(lowbw == 0 ~ "No", lowbw == 1 ~ "Yes"),
                            hyp = case_when(hyp == 0 ~ "No", hyp == 1 ~ "Yes"),
@@ -55,20 +60,24 @@ units(table$matage)       <- "years"
 
 caption  <- "Table 1. Descrpitive Stats"
 
-table1(~ bweight + gestwks_kat + hyp + preterm + sex + matage_kat| lowbw, data=table, caption = caption)
+table1(~ bweight + gestwks + hyp + preterm + sex + matage_kat| lowbw, data=table, caption = caption)
 
 
 
 #model
 
 library(broom)
-mylogit <- glm(as.factor(lowbw) ~ as.factor(gestwks_kat), data = table, family = "binomial")
+
+mylogit <- glm(as.factor(lowbw) ~ as.factor(hyp), data = table, family = "binomial")
 summary(mylogit)
 tidy(mylogit, exponentiate=TRUE, conf.int=TRUE)
+mylogit_1 <- glm(as.factor(lowbw) ~ gestwks, data = table, family = "binomial")
+summary(mylogit_1)
+tidy(mylogit_1, exponentiate=TRUE, conf.int=TRUE)
 mylogit2 <- glm(as.factor(lowbw) ~ as.factor(preterm) + as.factor(hyp), data = table, family = "binomial")
 summary(mylogit2)
 tidy(mylogit2, exponentiate=TRUE, conf.int=TRUE)
-mylogit3 <- glm(as.factor(lowbw) ~ as.factor(preterm) + as.factor(sex) +as.factor(matage_kat) + as.factor(hyp), data = table, family = "binomial")
+mylogit3 <- glm(as.factor(lowbw) ~ gestwks + as.factor(sex) +as.factor(matage_kat) + as.factor(hyp), data = table, family = "binomial")
 summary(mylogit3)
 tidy(mylogit3, exponentiate=TRUE, conf.int=TRUE)
 mylogit4 <- glm(as.factor(lowbw) ~ as.factor(preterm) + as.factor(preterm) + as.factor(matage_kat) + as.factor(hyp) + as.factor(matage_kat)*as.factor(sex), data = table, family = "binomial")
@@ -77,10 +86,9 @@ tidy(mylogit4, exponentiate=TRUE, conf.int=TRUE)
 
 
 #GOF
-#hosmer-lemeshowa
+#hosmer-lemeshow
 library(performance)
 performance_hosmer(mylogit3, n_bins = 5)
-performance_hosmer(mylogit4, n_bins = 5)
 
 #anova
 library(lmtest)
@@ -89,7 +97,7 @@ lrtest(mylogit, mylogit3)
 lrtest(mylogit, mylogit4)
 lrtest(mylogit2, mylogit3)
 lrtest(mylogit2, mylogit4)
-lrtest(mylogit3, mylogit4)
+lrtest(mylogit2, mylogit4)
 
 
 #aic

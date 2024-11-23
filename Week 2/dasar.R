@@ -255,5 +255,5 @@ pajak <- function(umur,gaji) {
 }
 
 pajak(29,2000000)
-pajak(35,4000000)   #options(scipen = 9999)
+pajak(35,4000000)   
 

@@ -1,5 +1,5 @@
 getwd()
-setwd("C:/Users/dhihr/Downloads/pelatihan R mas mirza-20240127T100857Z-001/pelatihan R mas mirza")
+setwd("C:/Users/dhihr/OneDrive - London School of Hygiene and Tropical Medicine/R PHLC/pertemuan 1")
 #data txt
 
 ddata<-read.table("data1.txt")
@@ -9,9 +9,12 @@ View(ddata)
 
 #data csv
 dcustomer<-read.csv("customer.csv")
+
+
 View(dcustomer)
 
 #data xlsx
+#install.packages('readxl')
 library(readxl)
 dcustomer2<-read_xlsx("customer.xlsx")
 View(dcustomer2)
@@ -69,27 +72,7 @@ dbDisconnect(mydb)
 
 
 
-####text####
-textku <- "Sy mencoba untuk memahami bahasa ini,
-awalnya terasa sulit, namun setelah beberapa saat mulai terasa lebih mudah,
-sehingga aku Mulai, Menyukai nya."
 
-textku
-cat(textku)
-tolower(textku)
-
-textku2<- "Dunia ini serasa milik berdua"
-nchar(textku2)
-
-
-textku3 <- c("World", "in the world", "WORLD","WorlD","Wo","Wont")
-
-pattern="World"
-grep(pattern, textku3, value=FALSE, ignore.case = FALSE)
-grep(pattern, textku3, value=FALSE, ignore.case = FALSE)
-grep(pattern, textku3, value=TRUE, ignore.case = FALSE)
-grep(pattern, textku3, value=FALSE, ignore.case = TRUE)
-grep(pattern, textku3, value=TRUE, ignore.case = TRUE)
 
 
 
@@ -100,6 +83,7 @@ View(dcustomer)
 
 summary(dcustomer)
 
+#install.packages('psych')
 library(psych)
 salary=dcustomer$salary
 psych::describe(salary)
@@ -111,9 +95,12 @@ psych::describe(data39)
 
 gender=dcustomer$gender
 
+table(gender)
+table(dcustomer$degree_level)
 tabelku=table(gender)
 tabelku
 prop.table(tabelku)
+prop.table(table(dcustomer$gender))
 
 status=dcustomer$marital_status
 
@@ -137,3 +124,9 @@ aggregate(x=salary,by=list(gender,status),FUN=mean)
 sink('abc.txt')
 summary(dcustomer)
 sink()
+
+library(psych)
+
+save(dcustomer,file='dcustomer.Rdata')
+load('dcustomer.Rdata')
+write.csv(dcustomer, "dcustomer2.csv")

@@ -1,0 +1,300 @@
+Age,Gender,ChestPain,BloodPressure,Cholesterol,BloodSugar,Electrocardiographic,HeartRate,Exang,ST,slope,Vessel,Thalassemia,HeartDisease
+63,M,typical angina,145,233,>120,hyperthropy,150,no,2.3,down,0,fixed defect,no
+67,M,asymptotic,160,286,<=120,hyperthropy,108,yes,1.5,flat,3,normal,yes
+67,M,asymptotic,120,229,<=120,hyperthropy,129,yes,2.6,flat,2,reversible defect,yes
+37,M,non-anginal pain,130,250,<=120,normal,187,no,3.5,down,0,normal,no
+41,F,atypical angina,130,204,<=120,hyperthropy,172,no,1.4,up,0,normal,no
+56,M,atypical angina,120,236,<=120,normal,178,no,0.8,up,0,normal,no
+62,F,asymptotic,140,268,<=120,hyperthropy,160,no,3.6,down,2,normal,yes
+57,F,asymptotic,120,354,<=120,normal,163,yes,0.6,up,0,normal,no
+63,M,asymptotic,130,254,<=120,hyperthropy,147,no,1.4,flat,1,reversible defect,yes
+53,M,asymptotic,140,203,>120,hyperthropy,155,yes,3.1,down,0,reversible defect,yes
+57,M,asymptotic,140,192,<=120,normal,148,no,0.4,flat,0,fixed defect,no
+56,F,atypical angina,140,294,<=120,hyperthropy,153,no,1.3,flat,0,normal,no
+56,M,non-anginal pain,130,256,>120,hyperthropy,142,yes,0.6,flat,1,fixed defect,yes
+44,M,atypical angina,120,263,<=120,normal,173,no,0,up,0,reversible defect,no
+52,M,non-anginal pain,172,199,>120,normal,162,no,0.5,up,0,reversible defect,no
+57,M,non-anginal pain,150,168,<=120,normal,174,no,1.6,up,0,normal,no
+48,M,atypical angina,110,229,<=120,normal,168,no,1,down,0,reversible defect,yes
+54,M,asymptotic,140,239,<=120,normal,160,no,1.2,up,0,normal,no
+48,F,non-anginal pain,130,275,<=120,normal,139,no,0.2,up,0,normal,no
+49,M,atypical angina,130,266,<=120,normal,171,no,0.6,up,0,normal,no
+64,M,typical angina,110,211,<=120,hyperthropy,144,yes,1.8,flat,0,normal,no
+58,F,typical angina,150,283,>120,hyperthropy,162,no,1,up,0,normal,no
+58,M,atypical angina,120,284,<=120,hyperthropy,160,no,1.8,flat,0,normal,yes
+58,M,non-anginal pain,132,224,<=120,hyperthropy,173,no,3.2,up,2,reversible defect,yes
+60,M,asymptotic,130,206,<=120,hyperthropy,132,yes,2.4,flat,2,reversible defect,yes
+50,F,non-anginal pain,120,219,<=120,normal,158,no,1.6,flat,0,normal,no
+58,F,non-anginal pain,120,340,<=120,normal,172,no,0,up,0,normal,no
+66,F,typical angina,150,226,<=120,normal,114,no,2.6,down,0,normal,no
+43,M,asymptotic,150,247,<=120,normal,171,no,1.5,up,0,normal,no
+40,M,asymptotic,110,167,<=120,hyperthropy,114,yes,2,flat,0,reversible defect,yes
+69,F,typical angina,140,239,<=120,normal,151,no,1.8,up,2,normal,no
+60,M,asymptotic,117,230,>120,normal,160,yes,1.4,up,2,reversible defect,yes
+64,M,non-anginal pain,140,335,<=120,normal,158,no,0,up,0,normal,yes
+59,M,asymptotic,135,234,<=120,normal,161,no,0.5,flat,0,reversible defect,no
+44,M,non-anginal pain,130,233,<=120,normal,179,yes,0.4,up,0,normal,no
+42,M,asymptotic,140,226,<=120,normal,178,no,0,up,0,normal,no
+43,M,asymptotic,120,177,<=120,hyperthropy,120,yes,2.5,flat,0,reversible defect,yes
+57,M,asymptotic,150,276,<=120,hyperthropy,112,yes,0.6,flat,1,fixed defect,yes
+55,M,asymptotic,132,353,<=120,normal,132,yes,1.2,flat,1,reversible defect,yes
+61,M,non-anginal pain,150,243,>120,normal,137,yes,1,flat,0,normal,no
+65,F,asymptotic,150,225,<=120,hyperthropy,114,no,1,flat,3,reversible defect,yes
+40,M,typical angina,140,199,<=120,normal,178,yes,1.4,up,0,reversible defect,no
+71,F,atypical angina,160,302,<=120,normal,162,no,0.4,up,2,normal,no
+59,M,non-anginal pain,150,212,>120,normal,157,no,1.6,up,0,normal,no
+61,F,asymptotic,130,330,<=120,hyperthropy,169,no,0,up,0,normal,yes
+58,M,non-anginal pain,112,230,<=120,hyperthropy,165,no,2.5,flat,1,reversible defect,yes
+51,M,non-anginal pain,110,175,<=120,normal,123,no,0.6,up,0,normal,no
+50,M,asymptotic,150,243,<=120,hyperthropy,128,no,2.6,flat,0,reversible defect,yes
+65,F,non-anginal pain,140,417,>120,hyperthropy,157,no,0.8,up,1,normal,no
+53,M,non-anginal pain,130,197,>120,hyperthropy,152,no,1.2,down,0,normal,no
+41,F,atypical angina,105,198,<=120,normal,168,no,0,up,1,normal,no
+65,M,asymptotic,120,177,<=120,normal,140,no,0.4,up,0,reversible defect,no
+44,M,asymptotic,112,290,<=120,hyperthropy,153,no,0,up,1,normal,yes
+44,M,atypical angina,130,219,<=120,hyperthropy,188,no,0,up,0,normal,no
+60,M,asymptotic,130,253,<=120,normal,144,yes,1.4,up,1,reversible defect,yes
+54,M,asymptotic,124,266,<=120,hyperthropy,109,yes,2.2,flat,1,reversible defect,yes
+50,M,non-anginal pain,140,233,<=120,normal,163,no,0.6,flat,1,reversible defect,yes
+41,M,asymptotic,110,172,<=120,hyperthropy,158,no,0,up,0,reversible defect,yes
+54,M,non-anginal pain,125,273,<=120,hyperthropy,152,no,0.5,down,1,normal,no
+51,M,typical angina,125,213,<=120,hyperthropy,125,yes,1.4,up,1,normal,no
+51,F,asymptotic,130,305,<=120,normal,142,yes,1.2,flat,0,reversible defect,yes
+46,F,non-anginal pain,142,177,<=120,hyperthropy,160,yes,1.4,down,0,normal,no
+58,M,asymptotic,128,216,<=120,hyperthropy,131,yes,2.2,flat,3,reversible defect,yes
+54,F,non-anginal pain,135,304,>120,normal,170,no,0,up,0,normal,no
+54,M,asymptotic,120,188,<=120,normal,113,no,1.4,flat,1,reversible defect,yes
+60,M,asymptotic,145,282,<=120,hyperthropy,142,yes,2.8,flat,2,reversible defect,yes
+60,M,non-anginal pain,140,185,<=120,hyperthropy,155,no,3,flat,0,normal,yes
+54,M,non-anginal pain,150,232,<=120,hyperthropy,165,no,1.6,up,0,reversible defect,no
+59,M,asymptotic,170,326,<=120,hyperthropy,140,yes,3.4,down,0,reversible defect,yes
+46,M,non-anginal pain,150,231,<=120,normal,147,no,3.6,flat,0,normal,yes
+65,F,non-anginal pain,155,269,<=120,normal,148,no,0.8,up,0,normal,no
+67,M,asymptotic,125,254,>120,normal,163,no,0.2,flat,2,reversible defect,yes
+62,M,asymptotic,120,267,<=120,normal,99,yes,1.8,flat,2,reversible defect,yes
+65,M,asymptotic,110,248,<=120,hyperthropy,158,no,0.6,up,2,fixed defect,yes
+44,M,asymptotic,110,197,<=120,hyperthropy,177,no,0,up,1,normal,yes
+65,F,non-anginal pain,160,360,<=120,hyperthropy,151,no,0.8,up,0,normal,no
+60,M,asymptotic,125,258,<=120,hyperthropy,141,yes,2.8,flat,1,reversible defect,yes
+51,F,non-anginal pain,140,308,<=120,hyperthropy,142,no,1.5,up,1,normal,no
+48,M,atypical angina,130,245,<=120,hyperthropy,180,no,0.2,flat,0,normal,no
+58,M,asymptotic,150,270,<=120,hyperthropy,111,yes,0.8,up,0,reversible defect,yes
+45,M,asymptotic,104,208,<=120,hyperthropy,148,yes,3,flat,0,normal,no
+53,F,asymptotic,130,264,<=120,hyperthropy,143,no,0.4,flat,0,normal,no
+39,M,non-anginal pain,140,321,<=120,hyperthropy,182,no,0,up,0,normal,no
+68,M,non-anginal pain,180,274,>120,hyperthropy,150,yes,1.6,flat,0,reversible defect,yes
+52,M,atypical angina,120,325,<=120,normal,172,no,0.2,up,0,normal,no
+44,M,non-anginal pain,140,235,<=120,hyperthropy,180,no,0,up,0,normal,no
+47,M,non-anginal pain,138,257,<=120,hyperthropy,156,no,0,up,0,normal,no
+53,F,non-anginal pain,128,216,<=120,hyperthropy,115,no,0,up,0,reversible defect,no
+53,F,asymptotic,138,234,<=120,hyperthropy,160,no,0,up,0,normal,no
+51,F,non-anginal pain,130,256,<=120,hyperthropy,149,no,0.5,up,0,normal,no
+66,M,asymptotic,120,302,<=120,hyperthropy,151,no,0.4,flat,0,normal,no
+62,F,asymptotic,160,164,<=120,hyperthropy,145,no,6.2,down,3,reversible defect,yes
+62,M,non-anginal pain,130,231,<=120,normal,146,no,1.8,flat,3,reversible defect,no
+44,F,non-anginal pain,108,141,<=120,normal,175,no,0.6,flat,0,normal,no
+63,F,non-anginal pain,135,252,<=120,hyperthropy,172,no,0,up,0,normal,no
+52,M,asymptotic,128,255,<=120,normal,161,yes,0,up,1,reversible defect,yes
+59,M,asymptotic,110,239,<=120,hyperthropy,142,yes,1.2,flat,1,reversible defect,yes
+60,F,asymptotic,150,258,<=120,hyperthropy,157,no,2.6,flat,2,reversible defect,yes
+52,M,atypical angina,134,201,<=120,normal,158,no,0.8,up,1,normal,no
+48,M,asymptotic,122,222,<=120,hyperthropy,186,no,0,up,0,normal,no
+45,M,asymptotic,115,260,<=120,hyperthropy,185,no,0,up,0,normal,no
+34,M,typical angina,118,182,<=120,hyperthropy,174,no,0,up,0,normal,no
+57,F,asymptotic,128,303,<=120,hyperthropy,159,no,0,up,1,normal,no
+71,F,non-anginal pain,110,265,>120,hyperthropy,130,no,0,up,1,normal,no
+49,M,non-anginal pain,120,188,<=120,normal,139,no,2,flat,3,reversible defect,yes
+54,M,atypical angina,108,309,<=120,normal,156,no,0,up,0,reversible defect,no
+59,M,asymptotic,140,177,<=120,normal,162,yes,0,up,1,reversible defect,yes
+57,M,non-anginal pain,128,229,<=120,hyperthropy,150,no,0.4,flat,1,reversible defect,yes
+61,M,asymptotic,120,260,<=120,normal,140,yes,3.6,flat,1,reversible defect,yes
+39,M,asymptotic,118,219,<=120,normal,140,no,1.2,flat,0,reversible defect,yes
+61,F,asymptotic,145,307,<=120,hyperthropy,146,yes,1,flat,0,reversible defect,yes
+56,M,asymptotic,125,249,>120,hyperthropy,144,yes,1.2,flat,1,normal,yes
+52,M,typical angina,118,186,<=120,hyperthropy,190,no,0,flat,0,fixed defect,no
+43,F,asymptotic,132,341,>120,hyperthropy,136,yes,3,flat,0,reversible defect,yes
+62,F,non-anginal pain,130,263,<=120,normal,97,no,1.2,flat,1,reversible defect,yes
+41,M,atypical angina,135,203,<=120,normal,132,no,0,flat,0,fixed defect,no
+58,M,non-anginal pain,140,211,>120,hyperthropy,165,no,0,up,0,normal,no
+35,F,asymptotic,138,183,<=120,normal,182,no,1.4,up,0,normal,no
+63,M,asymptotic,130,330,>120,hyperthropy,132,yes,1.8,up,3,reversible defect,yes
+65,M,asymptotic,135,254,<=120,hyperthropy,127,no,2.8,flat,1,reversible defect,yes
+48,M,asymptotic,130,256,>120,hyperthropy,150,yes,0,up,2,reversible defect,yes
+63,F,asymptotic,150,407,<=120,hyperthropy,154,no,4,flat,3,reversible defect,yes
+51,M,non-anginal pain,100,222,<=120,normal,143,yes,1.2,flat,0,normal,no
+55,M,asymptotic,140,217,<=120,normal,111,yes,5.6,down,0,reversible defect,yes
+65,M,typical angina,138,282,>120,hyperthropy,174,no,1.4,flat,1,normal,yes
+45,F,atypical angina,130,234,<=120,hyperthropy,175,no,0.6,flat,0,normal,no
+56,F,asymptotic,200,288,>120,hyperthropy,133,yes,4,down,2,reversible defect,yes
+54,M,asymptotic,110,239,<=120,normal,126,yes,2.8,flat,1,reversible defect,yes
+44,M,atypical angina,120,220,<=120,normal,170,no,0,up,0,normal,no
+62,F,asymptotic,124,209,<=120,normal,163,no,0,up,0,normal,no
+54,M,non-anginal pain,120,258,<=120,hyperthropy,147,no,0.4,flat,0,reversible defect,no
+51,M,non-anginal pain,94,227,<=120,normal,154,yes,0,up,1,reversible defect,no
+29,M,atypical angina,130,204,<=120,hyperthropy,202,no,0,up,0,normal,no
+51,M,asymptotic,140,261,<=120,hyperthropy,186,yes,0,up,0,normal,no
+43,F,non-anginal pain,122,213,<=120,normal,165,no,0.2,flat,0,normal,no
+55,F,atypical angina,135,250,<=120,hyperthropy,161,no,1.4,flat,0,normal,no
+70,M,asymptotic,145,174,<=120,normal,125,yes,2.6,down,0,reversible defect,yes
+62,M,atypical angina,120,281,<=120,hyperthropy,103,no,1.4,flat,1,reversible defect,yes
+35,M,asymptotic,120,198,<=120,normal,130,yes,1.6,flat,0,reversible defect,yes
+51,M,non-anginal pain,125,245,>120,hyperthropy,166,no,2.4,flat,0,normal,no
+59,M,atypical angina,140,221,<=120,normal,164,yes,0,up,0,normal,no
+59,M,typical angina,170,288,<=120,hyperthropy,159,no,0.2,flat,0,reversible defect,yes
+52,M,atypical angina,128,205,>120,normal,184,no,0,up,0,normal,no
+64,M,non-anginal pain,125,309,<=120,normal,131,yes,1.8,flat,0,reversible defect,yes
+58,M,non-anginal pain,105,240,<=120,hyperthropy,154,yes,0.6,flat,0,reversible defect,no
+47,M,non-anginal pain,108,243,<=120,normal,152,no,0,up,0,normal,yes
+57,M,asymptotic,165,289,>120,hyperthropy,124,no,1,flat,3,reversible defect,yes
+41,M,non-anginal pain,112,250,<=120,normal,179,no,0,up,0,normal,no
+45,M,atypical angina,128,308,<=120,hyperthropy,170,no,0,up,0,normal,no
+60,F,non-anginal pain,102,318,<=120,normal,160,no,0,up,1,normal,no
+52,M,typical angina,152,298,>120,normal,178,no,1.2,flat,0,reversible defect,no
+42,F,asymptotic,102,265,<=120,hyperthropy,122,no,0.6,flat,0,normal,no
+67,F,non-anginal pain,115,564,<=120,hyperthropy,160,no,1.6,flat,0,reversible defect,no
+55,M,asymptotic,160,289,<=120,hyperthropy,145,yes,0.8,flat,1,reversible defect,yes
+64,M,asymptotic,120,246,<=120,hyperthropy,96,yes,2.2,down,1,normal,yes
+70,M,asymptotic,130,322,<=120,hyperthropy,109,no,2.4,flat,3,normal,yes
+51,M,asymptotic,140,299,<=120,normal,173,yes,1.6,up,0,reversible defect,yes
+58,M,asymptotic,125,300,<=120,hyperthropy,171,no,0,up,2,reversible defect,yes
+60,M,asymptotic,140,293,<=120,hyperthropy,170,no,1.2,flat,2,reversible defect,yes
+68,M,non-anginal pain,118,277,<=120,normal,151,no,1,up,1,reversible defect,no
+46,M,atypical angina,101,197,>120,normal,156,no,0,up,0,reversible defect,no
+77,M,asymptotic,125,304,<=120,hyperthropy,162,yes,0,up,3,normal,yes
+54,F,non-anginal pain,110,214,<=120,normal,158,no,1.6,flat,0,normal,no
+58,F,asymptotic,100,248,<=120,hyperthropy,122,no,1,flat,0,normal,no
+48,M,non-anginal pain,124,255,>120,normal,175,no,0,up,2,normal,no
+57,M,asymptotic,132,207,<=120,normal,168,yes,0,up,0,reversible defect,no
+54,F,atypical angina,132,288,>120,hyperthropy,159,yes,0,up,1,normal,no
+35,M,asymptotic,126,282,<=120,hyperthropy,156,yes,0,up,0,reversible defect,yes
+45,F,atypical angina,112,160,<=120,normal,138,no,0,flat,0,normal,no
+70,M,non-anginal pain,160,269,<=120,normal,112,yes,2.9,flat,1,reversible defect,yes
+53,M,asymptotic,142,226,<=120,hyperthropy,111,yes,0,up,0,reversible defect,no
+59,F,asymptotic,174,249,<=120,normal,143,yes,0,flat,0,normal,yes
+62,F,asymptotic,140,394,<=120,hyperthropy,157,no,1.2,flat,0,normal,no
+64,M,asymptotic,145,212,<=120,hyperthropy,132,no,2,flat,2,fixed defect,yes
+57,M,asymptotic,152,274,<=120,normal,88,yes,1.2,flat,1,reversible defect,yes
+52,M,asymptotic,108,233,>120,normal,147,no,0.1,up,3,reversible defect,no
+56,M,asymptotic,132,184,<=120,hyperthropy,105,yes,2.1,flat,1,fixed defect,yes
+43,M,non-anginal pain,130,315,<=120,normal,162,no,1.9,up,1,normal,no
+53,M,non-anginal pain,130,246,>120,hyperthropy,173,no,0,up,3,normal,no
+48,M,asymptotic,124,274,<=120,hyperthropy,166,no,0.5,flat,0,reversible defect,yes
+56,F,asymptotic,134,409,<=120,hyperthropy,150,yes,1.9,flat,2,reversible defect,yes
+42,M,typical angina,148,244,<=120,hyperthropy,178,no,0.8,up,2,normal,no
+59,M,typical angina,178,270,<=120,hyperthropy,145,no,4.2,down,0,reversible defect,no
+60,F,asymptotic,158,305,<=120,hyperthropy,161,no,0,up,0,normal,yes
+63,F,atypical angina,140,195,<=120,normal,179,no,0,up,2,normal,no
+42,M,non-anginal pain,120,240,>120,normal,194,no,0.8,down,0,reversible defect,no
+66,M,atypical angina,160,246,<=120,normal,120,yes,0,flat,3,fixed defect,yes
+54,M,atypical angina,192,283,<=120,hyperthropy,195,no,0,up,1,reversible defect,yes
+69,M,non-anginal pain,140,254,<=120,hyperthropy,146,no,2,flat,3,reversible defect,yes
+50,M,non-anginal pain,129,196,<=120,normal,163,no,0,up,0,normal,no
+51,M,asymptotic,140,298,<=120,normal,122,yes,4.2,flat,3,reversible defect,yes
+62,F,asymptotic,138,294,>120,normal,106,no,1.9,flat,3,normal,yes
+68,F,non-anginal pain,120,211,<=120,hyperthropy,115,no,1.5,flat,0,normal,no
+67,M,asymptotic,100,299,<=120,hyperthropy,125,yes,0.9,flat,2,normal,yes
+69,M,typical angina,160,234,>120,hyperthropy,131,no,0.1,flat,1,normal,no
+45,F,asymptotic,138,236,<=120,hyperthropy,152,yes,0.2,flat,0,normal,no
+50,F,atypical angina,120,244,<=120,normal,162,no,1.1,up,0,normal,no
+59,M,typical angina,160,273,<=120,hyperthropy,125,no,0,up,0,normal,yes
+50,F,asymptotic,110,254,<=120,hyperthropy,159,no,0,up,0,normal,no
+64,F,asymptotic,180,325,<=120,normal,154,yes,0,up,0,normal,no
+57,M,non-anginal pain,150,126,>120,normal,173,no,0.2,up,1,reversible defect,no
+64,F,non-anginal pain,140,313,<=120,normal,133,no,0.2,up,0,reversible defect,no
+43,M,asymptotic,110,211,<=120,normal,161,no,0,up,0,reversible defect,no
+45,M,asymptotic,142,309,<=120,hyperthropy,147,yes,0,flat,3,reversible defect,yes
+58,M,asymptotic,128,259,<=120,hyperthropy,130,yes,3,flat,2,reversible defect,yes
+50,M,asymptotic,144,200,<=120,hyperthropy,126,yes,0.9,flat,0,reversible defect,yes
+55,M,atypical angina,130,262,<=120,normal,155,no,0,up,0,normal,no
+62,F,asymptotic,150,244,<=120,normal,154,yes,1.4,flat,0,normal,yes
+37,F,non-anginal pain,120,215,<=120,normal,170,no,0,up,0,normal,no
+38,M,typical angina,120,231,<=120,normal,182,yes,3.8,flat,0,reversible defect,yes
+41,M,non-anginal pain,130,214,<=120,hyperthropy,168,no,2,flat,0,normal,no
+66,F,asymptotic,178,228,>120,normal,165,yes,1,flat,2,reversible defect,yes
+52,M,asymptotic,112,230,<=120,normal,160,no,0,up,1,normal,yes
+56,M,typical angina,120,193,<=120,hyperthropy,162,no,1.9,flat,0,reversible defect,no
+46,F,atypical angina,105,204,<=120,normal,172,no,0,up,0,normal,no
+46,F,asymptotic,138,243,<=120,hyperthropy,152,yes,0,flat,0,normal,no
+64,F,asymptotic,130,303,<=120,normal,122,no,2,flat,2,normal,no
+59,M,asymptotic,138,271,<=120,hyperthropy,182,no,0,up,0,normal,no
+41,F,non-anginal pain,112,268,<=120,hyperthropy,172,yes,0,up,0,normal,no
+54,F,non-anginal pain,108,267,<=120,hyperthropy,167,no,0,up,0,normal,no
+39,F,non-anginal pain,94,199,<=120,normal,179,no,0,up,0,normal,no
+53,M,asymptotic,123,282,<=120,normal,95,yes,2,flat,2,reversible defect,yes
+63,F,asymptotic,108,269,<=120,normal,169,yes,1.8,flat,2,normal,yes
+34,F,atypical angina,118,210,<=120,normal,192,no,0.7,up,0,normal,no
+47,M,asymptotic,112,204,<=120,normal,143,no,0.1,up,0,normal,no
+67,F,non-anginal pain,152,277,<=120,normal,172,no,0,up,1,normal,no
+54,M,asymptotic,110,206,<=120,hyperthropy,108,yes,0,flat,1,normal,yes
+66,M,asymptotic,112,212,<=120,hyperthropy,132,yes,0.1,up,1,normal,yes
+52,F,non-anginal pain,136,196,<=120,hyperthropy,169,no,0.1,flat,0,normal,no
+55,F,asymptotic,180,327,<=120,abnormal,117,yes,3.4,flat,0,normal,yes
+49,M,non-anginal pain,118,149,<=120,hyperthropy,126,no,0.8,up,3,normal,yes
+74,F,atypical angina,120,269,<=120,hyperthropy,121,yes,0.2,up,1,normal,no
+54,F,non-anginal pain,160,201,<=120,normal,163,no,0,up,1,normal,no
+54,M,asymptotic,122,286,<=120,hyperthropy,116,yes,3.2,flat,2,normal,yes
+56,M,asymptotic,130,283,>120,hyperthropy,103,yes,1.6,down,0,reversible defect,yes
+46,M,asymptotic,120,249,<=120,hyperthropy,144,no,0.8,up,0,reversible defect,yes
+49,F,atypical angina,134,271,<=120,normal,162,no,0,flat,0,normal,no
+42,M,atypical angina,120,295,<=120,normal,162,no,0,up,0,normal,no
+41,M,atypical angina,110,235,<=120,normal,153,no,0,up,0,normal,no
+41,F,atypical angina,126,306,<=120,normal,163,no,0,up,0,normal,no
+49,F,asymptotic,130,269,<=120,normal,163,no,0,up,0,normal,no
+61,M,typical angina,134,234,<=120,normal,145,no,2.6,flat,2,normal,yes
+60,F,non-anginal pain,120,178,>120,normal,96,no,0,up,0,normal,no
+67,M,asymptotic,120,237,<=120,normal,71,no,1,flat,0,normal,yes
+58,M,asymptotic,100,234,<=120,normal,156,no,0.1,up,1,reversible defect,yes
+47,M,asymptotic,110,275,<=120,hyperthropy,118,yes,1,flat,1,normal,yes
+52,M,asymptotic,125,212,<=120,normal,168,no,1,up,2,reversible defect,yes
+62,M,atypical angina,128,208,>120,hyperthropy,140,no,0,up,0,normal,no
+57,M,asymptotic,110,201,<=120,normal,126,yes,1.5,flat,0,fixed defect,no
+58,M,asymptotic,146,218,<=120,normal,105,no,2,flat,1,reversible defect,yes
+64,M,asymptotic,128,263,<=120,normal,105,yes,0.2,flat,1,reversible defect,no
+51,F,non-anginal pain,120,295,<=120,hyperthropy,157,no,0.6,up,0,normal,no
+43,M,asymptotic,115,303,<=120,normal,181,no,1.2,flat,0,normal,no
+42,F,non-anginal pain,120,209,<=120,normal,173,no,0,flat,0,normal,no
+67,F,asymptotic,106,223,<=120,normal,142,no,0.3,up,2,normal,no
+76,F,non-anginal pain,140,197,<=120,abnormal,116,no,1.1,flat,0,normal,no
+70,M,atypical angina,156,245,<=120,hyperthropy,143,no,0,up,0,normal,no
+57,M,atypical angina,124,261,<=120,normal,141,no,0.3,up,0,reversible defect,yes
+44,F,non-anginal pain,118,242,<=120,normal,149,no,0.3,flat,1,normal,no
+58,F,atypical angina,136,319,>120,hyperthropy,152,no,0,up,2,normal,yes
+60,F,typical angina,150,240,<=120,normal,171,no,0.9,up,0,normal,no
+44,M,non-anginal pain,120,226,<=120,normal,169,no,0,up,0,normal,no
+61,M,asymptotic,138,166,<=120,hyperthropy,125,yes,3.6,flat,1,normal,yes
+42,M,asymptotic,136,315,<=120,normal,125,yes,1.8,flat,0,fixed defect,yes
+52,M,asymptotic,128,204,>120,normal,156,yes,1,flat,0,reversible defect,yes
+59,M,non-anginal pain,126,218,>120,normal,134,no,2.2,flat,1,fixed defect,yes
+40,M,asymptotic,152,223,<=120,normal,181,no,0,up,0,reversible defect,yes
+42,M,non-anginal pain,130,180,<=120,normal,150,no,0,up,0,normal,no
+61,M,asymptotic,140,207,<=120,hyperthropy,138,yes,1.9,up,1,reversible defect,yes
+66,M,asymptotic,160,228,<=120,hyperthropy,138,no,2.3,up,0,fixed defect,no
+46,M,asymptotic,140,311,<=120,normal,120,yes,1.8,flat,2,reversible defect,yes
+71,F,asymptotic,112,149,<=120,normal,125,no,1.6,flat,0,normal,no
+59,M,typical angina,134,204,<=120,normal,162,no,0.8,up,2,normal,yes
+64,M,typical angina,170,227,<=120,hyperthropy,155,no,0.6,flat,0,reversible defect,no
+66,F,non-anginal pain,146,278,<=120,hyperthropy,152,no,0,flat,1,normal,no
+39,F,non-anginal pain,138,220,<=120,normal,152,no,0,flat,0,normal,no
+57,M,atypical angina,154,232,<=120,hyperthropy,164,no,0,up,1,normal,yes
+58,F,asymptotic,130,197,<=120,normal,131,no,0.6,flat,0,normal,no
+57,M,asymptotic,110,335,<=120,normal,143,yes,3,flat,1,reversible defect,yes
+47,M,non-anginal pain,130,253,<=120,normal,179,no,0,up,0,normal,no
+55,F,asymptotic,128,205,<=120,abnormal,130,yes,2,flat,1,reversible defect,yes
+35,M,atypical angina,122,192,<=120,normal,174,no,0,up,0,normal,no
+61,M,asymptotic,148,203,<=120,normal,161,no,0,up,1,reversible defect,yes
+58,M,asymptotic,114,318,<=120,abnormal,140,no,4.4,down,3,fixed defect,yes
+58,F,asymptotic,170,225,>120,hyperthropy,146,yes,2.8,flat,2,fixed defect,yes
+56,M,atypical angina,130,221,<=120,hyperthropy,163,no,0,up,0,reversible defect,no
+56,M,atypical angina,120,240,<=120,normal,169,no,0,down,0,normal,no
+67,M,non-anginal pain,152,212,<=120,hyperthropy,150,no,0.8,flat,0,reversible defect,yes
+55,F,atypical angina,132,342,<=120,normal,166,no,1.2,up,0,normal,no
+44,M,asymptotic,120,169,<=120,normal,144,yes,2.8,down,0,fixed defect,yes
+63,M,asymptotic,140,187,<=120,hyperthropy,144,yes,4,up,2,reversible defect,yes
+63,F,asymptotic,124,197,<=120,normal,136,yes,0,flat,0,normal,yes
+41,M,atypical angina,120,157,<=120,normal,182,no,0,up,0,normal,no
+59,M,asymptotic,164,176,>120,hyperthropy,90,no,1,flat,2,fixed defect,yes
+57,F,asymptotic,140,241,<=120,normal,123,yes,0.2,flat,0,reversible defect,yes
+45,M,typical angina,110,264,<=120,normal,132,no,1.2,flat,0,reversible defect,yes
+68,M,asymptotic,144,193,>120,normal,141,no,3.4,flat,2,reversible defect,yes
+57,M,asymptotic,130,131,<=120,normal,115,yes,1.2,flat,1,reversible defect,yes
+57,F,atypical angina,130,236,<=120,hyperthropy,174,no,0,flat,1,normal,yes

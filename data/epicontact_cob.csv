@@ -1,0 +1,110 @@
+id,infector,Collection.date,region,city,Patient.age,Gender,Patient.status,Last.vaccinated,Discharge.date
+case01,,11/1/2022,East Java,Surabaya,24,Female,Hospitalized,NA,11/21/2022
+case02,,11/7/2022,Central Java,Kota Semarang,18,Female,unknown,NA,11/27/2022
+case03,case02,11/17/2022,Central Java,Kota Semarang,66,Male,Hospitalized,NA,12/7/2022
+case04,,11/21/2022,West Java,Bandung Barat,33,Female,unknown,NA,12/11/2022
+case05,case04,12/9/2022,West Java,Depok City,78,Male,unknown,NA,12/29/2022
+case06,case01,12/19/2022,Yogyakarta,Yogyakarta,36,Female,unknown,NA,1/8/2023
+case07,,12/19/2022,West Kalimantan,Pontianak,43,Male,unknown,NA,1/8/2023
+case08,case01,12/23/2022,Yogyakarta,Yogyakarta,36,Male,unknown,NA,1/12/2023
+case09,,1/1/2023,East Java,Surabaya,27,Female,unknown,NA,1/21/2023
+case10,,1/4/2023,Jakarta,Jakarta,73,Female,unknown,NA,1/24/2023
+case11,case09,1/6/2023,West Java,Bogor,64,Male,unknown,NA,1/26/2023
+case12,,1/6/2023,East Java,Magetan,80,Female,Hospitalized,NA,1/26/2023
+case13,case15,1/10/2023,Jakarta,Jakarta,15,Female,unknown,NA,1/30/2023
+case14,case15,1/10/2023,Jakarta,Jakarta,53,Female,unknown,NA,1/30/2023
+case15,,1/10/2023,Jakarta,Jakarta,49,Male,unknown,NA,1/30/2023
+case16,case10,1/12/2023,Bali,Bali,29,Male,Live,NA,2/1/2023
+case17,,1/17/2023,West Java,Bandung Regency,35,Female,unknown,NA,2/6/2023
+case18,,1/23/2023,Jakarta,Jakarta,13,Male,unknown,NA,2/12/2023
+case19,case07,1/31/2023,Jakarta,Jakarta,6,Male,unknown,NA,2/20/2023
+case20,case17,2/4/2023,Jakarta,Jakarta,21,Female,unknown,NA,2/24/2023
+case21,case18,2/5/2023,Yogyakarta,Yogyakarta,65,Female,unknown,NA,2/25/2023
+case22,,2/6/2023,West Java,West Bandung Regency,86,Male,Hospitalized,NA,2/26/2023
+case23,case22,2/13/2023,East Java,Surabaya,0,Female,Recovered (no symptoms),NA,3/5/2023
+case24,,2/13/2023,Jakarta,Jakarta,19,Female,unknown,NA,3/5/2023
+case25,case21,2/16/2023,Jakarta,Jakarta,53,Female,unknown,NA,3/8/2023
+case26,case21,2/17/2023,Jakarta,Jakarta,34,Female,unknown,NA,3/9/2023
+case27,case24,2/24/2023,Jakarta,Jakarta,43,Female,unknown,NA,3/16/2023
+case28,,2/27/2023,Jakarta,Jakarta,40,Male,unknown,NA,3/19/2023
+case29,case28,2/28/2023,Jakarta,Jakarta,31,Female,unknown,NA,3/20/2023
+case30,case31,3/1/2023,Jakarta,Jakarta,23,Male,unknown,NA,3/21/2023
+case31,,3/1/2023,Jakarta,Jakarta,26,Male,unknown,NA,3/21/2023
+case32,case31,3/8/2023,Jakarta,Jakarta,0,Male,unknown,NA,3/28/2023
+case33,,3/9/2023,Jakarta,Jakarta,43,Male,unknown,NA,3/29/2023
+case34,,3/12/2023,Jakarta,Jakarta,NA,Female,unknown,NA,4/1/2023
+case35,,3/14/2023,Jakarta,Jakarta,40,Female,unknown,NA,4/3/2023
+case36,case26,3/17/2023,Jakarta,Jakarta,16,Female,unknown,NA,4/6/2023
+case37,,3/17/2023,Jakarta,Jakarta,22,Female,unknown,NA,4/6/2023
+case38,case34,3/21/2023,Jakarta,Jakarta,56,Male,unknown,NA,4/10/2023
+case39,case40,3/21/2023,East Java,Surabaya,68,Male,unknown,NA,4/10/2023
+case40,,3/21/2023,East Java,Surabaya,46,Female,unknown,NA,4/10/2023
+case41,case40,3/22/2023,East Java,Surabaya,54,Male,unknown,NA,4/11/2023
+case42,case33,3/24/2023,Jakarta,Jakarta,NA,Female,unknown,NA,4/13/2023
+case43,case35,3/24/2023,Jakarta,Jakarta,17,Male,unknown,NA,4/13/2023
+case44,case34,3/26/2023,Jakarta,Jakarta,40,Female,unknown,NA,4/15/2023
+case45,case30,3/27/2023,Jakarta,Jakarta,29,Female,unknown,NA,4/16/2023
+case46,case47,3/27/2023,Jakarta,Jakarta,35,Female,unknown,NA,4/16/2023
+case47,,3/27/2023,Jakarta,Jakarta,38,Male,unknown,NA,4/16/2023
+case48,case37,3/28/2023,Jakarta,Jakarta,49,Male,unknown,NA,4/17/2023
+case49,case40,3/28/2023,East Java,Surabaya,54,Male,unknown,NA,4/17/2023
+case50,,3/28/2023,Bali,Bali,44,Female,Hospitalized,NA,4/17/2023
+case51,case52,3/29/2023,Jakarta,Jakarta,60,Female,unknown,NA,4/18/2023
+case52,,3/29/2023,Jakarta,Jakarta,30,Female,unknown,NA,4/18/2023
+case53,,3/29/2023,East Java,Surabaya,41,Female,unknown,NA,4/18/2023
+case54,case50,3/31/2023,Bali,Bali,44,Female,Hospitalized,NA,4/20/2023
+case55,case57,3/31/2023,Jakarta,Jakarta,28,Female,unknown,NA,4/20/2023
+case56,case58,3/31/2023,Jakarta,Jakarta,37,Female,unknown,NA,4/20/2023
+case57,,3/31/2023,Jakarta,Jakarta,28,Male,unknown,NA,4/20/2023
+case58,,3/31/2023,Jakarta,Jakarta,67,Male,unknown,NA,4/20/2023
+case59,,4/1/2023,Jakarta,Jakarta,50,Female,unknown,NA,4/21/2023
+case60,case36,4/2/2023,Jakarta,Jakarta,31,Male,unknown,NA,4/22/2023
+case61,case45,4/3/2023,Jakarta,Jakarta,73,Female,unknown,NA,4/23/2023
+case62,,4/3/2023,West Java,Bandung City,44,Female,unknown,NA,4/23/2023
+case63,,4/3/2023,West Java,Bandung City,50,Female,Death,NA,4/23/2023
+case64,case62,4/6/2023,Jakarta,Jakarta,56,Male,unknown,NA,4/26/2023
+case65,case66,4/6/2023,Jakarta,Jakarta,22,Female,unknown,NA,4/26/2023
+case66,,4/6/2023,Jakarta,Jakarta,43,Male,unknown,NA,4/26/2023
+case67,case45,4/8/2023,Jakarta,Jakarta,3,Male,unknown,NA,4/28/2023
+case68,case69,4/10/2023,Jakarta,Jakarta,27,Female,unknown,NA,4/30/2023
+case69,,4/10/2023,Jakarta,Jakarta,30,Male,unknown,NA,4/30/2023
+case70,case53,4/11/2023,East Java,Surabaya,60,Female,Death,NA,5/1/2023
+case71,case62,4/12/2023,West Java,Bandung City,24,Female,unknown,NA,5/2/2023
+case72,case59,4/12/2023,Jakarta,Jakarta,69,Male,unknown,NA,5/2/2023
+case73,case62,4/14/2023,Jakarta,Jakarta,45,Female,unknown,NA,5/4/2023
+case74,,4/15/2023,East Kalimantan,East Kalimantan,22,Male,unknown,NA,5/5/2023
+case75,case78,4/19/2023,Jakarta,Jakarta,5,Male,unknown,NA,5/9/2023
+case76,case73,4/19/2023,West Java,Bandung City,66,Male,unknown,NA,5/9/2023
+case77,,4/19/2023,Jakarta,Jakarta,64,Female,unknown,NA,5/9/2023
+case78,,4/19/2023,Jakarta,Jakarta,36,Female,unknown,NA,5/9/2023
+case79,case72,4/20/2023,Jakarta,Jakarta,33,Male,unknown,NA,5/10/2023
+case80,case79,4/20/2023,Jakarta,Jakarta,39,Female,unknown,NA,5/10/2023
+case81,case77,4/21/2023,Jakarta,Jakarta,58,Female,unknown,NA,5/11/2023
+case82,case49,4/25/2023,East Java,Surabaya,38,Female,unknown,NA,5/15/2023
+case83,case63,4/26/2023,West Java,Bandung City,1,Male,unknown,NA,5/16/2023
+case84,,4/26/2023,South Kalimantan,Banjar Baru,42,Male,unknown,NA,5/16/2023
+case85,case49,4/27/2023,East Java,Surabaya,12,Female,unknown,NA,5/17/2023
+case86,,4/27/2023,East Java,Surabaya,53,Female,unknown,NA,5/17/2023
+case87,case74,4/28/2023,West Java,Bandung City,23,Male,unknown,NA,5/18/2023
+case88,,4/29/2023,Yogyakarta,Yogyakarta,87,Female,unknown,NA,5/19/2023
+case89,case76,5/3/2023,Jakarta,Jakarta,41,Female,unknown,NA,5/23/2023
+case90,case76,5/3/2023,Jakarta,Jakarta,16,Female,unknown,NA,5/23/2023
+case91,case88,5/8/2023,Jakarta,Jakarta,25,Female,unknown,NA,5/28/2023
+case92,case90,5/9/2023,Jakarta,Jakarta,63,Female,unknown,NA,5/29/2023
+case93,,5/9/2023,Jakarta,Jakarta,32,Male,unknown,NA,5/29/2023
+case94,,5/11/2023,West Java,Bandung,36,Male,unknown,NA,5/31/2023
+case95,case70,5/13/2023,East Java,Surabaya,76,Male,unknown,NA,6/2/2023
+case96,,5/15/2023,Jakarta,Jakarta,42,Female,unknown,NA,6/4/2023
+case97,case90,5/18/2023,Jakarta,Jakarta,44,Female,unknown,NA,6/7/2023
+case98,case93,5/20/2023,Jakarta,Jakarta,3,Female,unknown,NA,6/9/2023
+case99,case96,5/22/2023,Jakarta,Jakarta,24,Female,unknown,NA,6/11/2023
+case100,case102,5/24/2023,Jakarta,Jakarta,NA,Male,Death,NA,6/13/2023
+case101,case86,5/24/2023,East Java,Surabaya,22,Female,unknown,NA,6/13/2023
+case102,,5/24/2023,Jakarta,Jakarta,21,Female,unknown,NA,6/13/2023
+case103,case94,5/29/2023,Jakarta,Jakarta,24,Female,unknown,NA,6/18/2023
+case104,case84,5/31/2023,East Java,Surabaya,1,Male,unknown,NA,6/20/2023
+case105,,6/3/2023,Jakarta,Jakarta,25,Male,unknown,NA,6/23/2023
+case106,case97,6/7/2023,Jakarta,Jakarta,75,Male,unknown,NA,6/27/2023
+case107,case105,6/14/2023,Jakarta,Jakarta,30,Male,unknown,NA,7/4/2023
+case108,case109,1/20/2023,Jakarta,Jakarta,54,Female,Death,NA,2/9/2023
+case109,,12/12/2022,South Sumatra,Palembang,29,Female,unknown,NA,1/1/2023
